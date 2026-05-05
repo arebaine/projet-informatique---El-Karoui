@@ -49,13 +49,7 @@ Les fichiers produits sont écrits dans `results/figures/`.
 
 ## Références extraites du PDF
 
-Le dossier `results/reference_figures/` contient des extractions des figures du PDF fourni pour comparaison visuelle. Elles ne sont pas régénérées numériquement : ce sont des références.
-
-Pour les recréer depuis un autre PDF :
-
-```bash
-python scripts/extract_reference_figures.py "chemin/vers/article.pdf" --out results/reference_figures
-```
+Le dossier `results/reference_figures/` contient des extractions des figures du PDF de référence fourni pour comparaison visuelle. 
 
 ## Notes
 
