@@ -9,18 +9,6 @@ Ce package regroupe :
 - les figures générées par les scripts dans `results/figures/`.
 
 
-## Correctifs importants (2026-04-27)
-
-Les expériences `exp4_gas_storage.py` et `exp5_microgrid.py` ont été corrigées. Le bug principal venait de Qknn : les quantifieurs utilisés étaient ceux de `N(0,1)` alors que les dynamiques du papier utilisent des bruits déjà multipliés par `sigma_p` ou `sigma_R`. Les scripts utilisent maintenant `scale_quantizer()`.
-
-Les sorties `results/` déjà présentes dans l'ancien zip peuvent être anciennes ; pour comparer proprement, régénère les sections 3.4 et 3.5 avec :
-
-```bash
-python scripts/exp4_gas_storage.py --fast --out results_corrected
-python scripts/exp5_microgrid.py --fast --out results_corrected
-```
-
-Voir aussi `CORRECTIONS.md`.
 
 ## Installation
 
